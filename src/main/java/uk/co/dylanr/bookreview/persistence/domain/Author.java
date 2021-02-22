@@ -1,5 +1,7 @@
 package uk.co.dylanr.bookreview.persistence.domain;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
 
 @Entity
@@ -10,9 +12,11 @@ public class Author {
     private Long id;
 
     @Column
+    @NotNull
     private String first_name;
 
     @Column
+    @NotNull
     private String last_name;
 
     @Column

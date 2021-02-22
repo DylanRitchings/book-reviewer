@@ -1,5 +1,7 @@
 package uk.co.dylanr.bookreview.persistence.domain;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
 
 @Entity
@@ -9,9 +11,11 @@ public class Review {
     private Long id;
 
     @Column
+    @NotNull
     private String body;
 
-//    private Book book;
+
+// TODO Book foreign key
 
 
 

@@ -1,5 +1,7 @@
 package uk.co.dylanr.bookreview.persistence.domain;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
 
 @Entity
@@ -8,7 +10,9 @@ public class Genre {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+
     @Column
+    @NotNull
     private String name;
 
     public Long getId() {
