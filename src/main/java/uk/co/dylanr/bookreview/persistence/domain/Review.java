@@ -22,14 +22,18 @@ public class Review {
     @NonNull
     private String body;
 
-    @NonNull
     @ManyToOne
+//    @JoinColumn(name="review_id")
+    @NonNull
     private Book book;
 
 
     public Review(String body, Book book){
+        super();
         this.body = body;
         this.book = book;
     }
+
+
 
 }

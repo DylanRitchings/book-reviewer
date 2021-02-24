@@ -34,7 +34,7 @@ public class BookController {
 
 
     @PutMapping("/update/{id}")
-    public ResponseEntity<BookDto> updateById(@PathVariable Long id, @RequestBody Book book) {
+    public ResponseEntity<BookDto> updateById(@PathVariable Long id, @RequestBody BookDto book) {
         BookDto updatedObject = this.service.updateById(id, book);
         return new ResponseEntity<>(updatedObject, HttpStatus.ACCEPTED);
     }

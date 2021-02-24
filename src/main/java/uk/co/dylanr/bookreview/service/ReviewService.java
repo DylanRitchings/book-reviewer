@@ -20,28 +20,24 @@ public class ReviewService {
     private ModelMapper mapper;
 
     @Autowired
-    public ReviewService(ReviewRepo repo) {
+    public ReviewService(ReviewRepo repo, ModelMapper mapper) {
         this.repo = repo;
+        this.mapper = mapper;
+    }
+
+    private ReviewDto toDto(Review review) {
+        return this.mapper.map(review, ReviewDto.class);
     }
 
     public ReviewDto create(Review review) {
-        Book book = review.getBook();
-//
-//        try {
-//            .create(book);
-//        } catch (NullPointerException npe){
-//            npe.printStackTrace();
-//            return null;
-//        }
-
         Review returnReview = this.repo.save(review);
-        return this.mapper.map(returnReview, ReviewDto.class);
+        return this.toDto(returnReview);
     }
 
     public ReviewDto readById(Long id) {
         Review review =this.repo.findById(id).orElseThrow(ReviewNotFoundException::new);
 
-        return this.mapper.map(review, ReviewDto.class);
+        return toDto(review);
     }
 
     public List<ReviewDto> readAll() {
@@ -49,7 +45,7 @@ public class ReviewService {
 
         return review
                 .stream()
-                .map(x -> this.mapper.map(Review.class, ReviewDto.class))
+                .map(this::toDto)
                 .collect(Collectors.toList());
     }
 
@@ -61,7 +57,7 @@ public class ReviewService {
 
         Review returnReview = this.repo.save(oldReview);
 
-        return this.mapper.map(returnReview, ReviewDto.class);
+        return toDto(returnReview);
     }
 
     public boolean deleteById(Long id) {
@@ -79,4 +75,12 @@ public class ReviewService {
 //        }
 //    }
 
+    //        Book book = review.getBook();
+//
+//        try {
+//            .create(book);
+//        } catch (NullPointerException npe){
+//            npe.printStackTrace();
+//            return null;
+//        }
 }

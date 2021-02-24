@@ -4,16 +4,17 @@ import lombok.NonNull;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.Repository;
+import org.springframework.stereotype.Repository;
 import uk.co.dylanr.bookreview.persistence.domain.Book;
 import uk.co.dylanr.bookreview.persistence.domain.Review;
 
 import java.util.List;
 
+@Repository
 public interface ReviewRepo extends JpaRepository<Review, Long> {
 
-    // SELECT * from Review where book_title = '[bookTitle]';
-    List<Review> findAllByBookTitle(@NonNull String book_title);
+//    // SELECT * from Review where book_title = '[bookTitle]';
+//    List<Review> findAllByBookTitle(@NonNull String book_title);
 
 //    List<Review> findReviewsByBook(String bookTitle);
 //

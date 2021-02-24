@@ -32,14 +32,27 @@ public class Book {
 
     @Column
     private String genre;
-
+//, fetch = FetchType.EAGER
     @OneToMany(mappedBy = "book", fetch = FetchType.EAGER)
     @OnDelete(action = OnDeleteAction.CASCADE)
-    private List<Review> reviews = new ArrayList<>();
+    @NonNull
+    private List<Review> review = new ArrayList<>();
 
     public Book (String author, String genre){
         this.author = author;
         this.genre = genre;
     }
+
+//    public void addReview(Review review) {
+//        if (review == null) {
+//            return;
+//        } else {
+//            if (reviews == null) {
+//                reviews = new ArrayList<Review>();
+//            }
+//            reviews.add(review);
+//        }
+//    }
+
 
 }
