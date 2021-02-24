@@ -1,9 +1,18 @@
 package uk.co.dylanr.bookreview.persistence.domain;
 
 import com.sun.istack.NotNull;
+import com.sun.xml.bind.v2.TODO;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
 import javax.persistence.*;
+import java.awt.print.Book;
 
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 @Entity
 public class Review {
     @Id
@@ -11,29 +20,20 @@ public class Review {
     private Long id;
 
     @Column
-    @NotNull
+    @NonNull
     private String body;
 
+    @Column
+    @NonNull
+    private String bookTitle;
 
-// TODO Book foreign key
+    @Column
+    @NonNull
+    private String authorName;
 
 
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    @Id
-    public Long getId() {
-        return id;
-    }
-
-    public String getBody() {
-        return body;
-    }
-
-    public void setBody(String body) {
+    public Review(String body, String bookTitle){
         this.body = body;
+        this.bookTitle = bookTitle;
     }
-
 }
