@@ -32,8 +32,9 @@ public class Review {
     private String authorName;
 
 
-    public Review(String body, String bookTitle){
+    public Review(String body, String bookTitle, String authorName){
         this.body = body;
         this.bookTitle = bookTitle;
+        this.authorName = authorName;
     }
 }
