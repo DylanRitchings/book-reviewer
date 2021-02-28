@@ -59,6 +59,11 @@ public class ReviewController {
         return ResponseEntity.ok(this.service.readByBookTitle(bookTitle));
     }
 
+    @GetMapping("/read/byAuthor/{authorName}")
+    public ResponseEntity<List<Review>> readByAuthorName(@PathVariable String authorName){
+        return ResponseEntity.ok(this.service.readByAuthorName(authorName));
+    }
+
 
 
 }

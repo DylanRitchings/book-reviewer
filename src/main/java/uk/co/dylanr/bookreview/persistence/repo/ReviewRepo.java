@@ -14,6 +14,7 @@ public interface ReviewRepo extends JpaRepository<Review, Long> {
     // SELECT * from Review where book_title = '[bookTitle]';
     List<Review> findAllByBookTitle(@NonNull String bookTitle);
 
+    List<Review> findAllByAuthorName(@NonNull String authorName);
 //    List<Review> findReviewsByBook(String bookTitle);
 //
 //    @Query(value = "SELECT * from Review WHERE bookTitle = ?'test' and body = ?'test2'", nativeQuery = true)

@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @SpringBootTest
-public class ReviewServiceUnit {
+public class ReviewServiceUnitTest {
     @Autowired
     private ReviewService service;
 
@@ -24,9 +24,7 @@ public class ReviewServiceUnit {
     private final Review reviewUnchanged = new Review(1L,"review text", "book title","Name Namington");
     private final Review review = new Review(1L,"review text", "book title","Name Namington");
     private final Review reviewChanged = new Review(1L,"This is new text", "new title","Different author");
-    private final Review reviewNoId = new Review("review text", "book title","Name Namington");
-    private final Review review2 = new Review(2L,"great book", "This is a book","Dylan Ritchings");
-    private final Review review2NoId = new Review("great book", "This is a book","Dylan Ritchings");
+    private final Review review2 = new Review(2L,"great book", "This is a book","Name Namington");
 
 
     private List<Review> reviews = List.of(review, review2);
@@ -75,5 +73,12 @@ public class ReviewServiceUnit {
         Mockito.when(this.repo.findAllByBookTitle(review.getBookTitle())).thenReturn(reviewL);
         Assertions.assertThat(this.service.readByBookTitle(review.getBookTitle())).isEqualTo(reviewL);
         Mockito.verify(this.repo, Mockito.times(1)).findAllByBookTitle(review.getBookTitle());
+    }
+
+    @Test
+    void testReadByAuthorName(){
+        Mockito.when(this.repo.findAllByAuthorName(review.getAuthorName())).thenReturn(reviews);
+        Assertions.assertThat(this.service.readByAuthorName(review.getAuthorName())).isEqualTo(reviews);
+        Mockito.verify(this.repo, Mockito.times(1)).findAllByAuthorName(review.getAuthorName());
     }
 }

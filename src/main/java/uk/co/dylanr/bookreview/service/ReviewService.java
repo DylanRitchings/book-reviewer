@@ -73,4 +73,15 @@ public class ReviewService {
         }
     }
 
+    public List<Review> readByAuthorName(String authorName) throws ReviewNotFoundException{
+        try {
+            return this.repo.findAllByAuthorName(authorName);
+        } catch (ReviewNotFoundException cnfe){
+            cnfe.printStackTrace();
+            return null;
+        }
+    }
+
+
+
 }
