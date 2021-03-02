@@ -3,7 +3,6 @@
 * [Usage](#usage)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Config](#config)
 * [Risk Assessment](#risk_assessment)
 * [Links](#links)
 * ...
@@ -15,12 +14,11 @@ The goal of this project was to create a simple CRUD (create, read, update, dele
 Project created using:
 * Kanban Board: Jira
 * Database: GCP Managed SQL Server
-* Programming language: Java
+* Programming language: Java, Spring
 * Front-end: HTML, CSS and JavaScript
 * Unit Tests: JUnit and Mockito
-* Integration Tests: Selenium
+* Integration Tests: Selenium?
 * Version Control: Git
-* CI Server: CircleCI
 * Cloud server: GCP virtual machine
 
 ## Project Tracking
@@ -29,19 +27,6 @@ Jira uses MOSCOW priority
 ## Entity Relationship Diagram
 
 
-## CI Pipeline
-
-
-
-## Setup
-```
-$
-$
-$
-```
-1. describe setup step
-2.
-3.
 
 ## Config
 Describe what the config variables do
