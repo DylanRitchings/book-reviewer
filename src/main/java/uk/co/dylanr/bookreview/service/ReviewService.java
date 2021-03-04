@@ -53,14 +53,15 @@ public class ReviewService {
         oldReview.setBody(newReview.getBody());
         oldReview.setBookTitle(newReview.getBookTitle());
         oldReview.setAuthorName(newReview.getAuthorName());
-        Review returnReview = this.repo.save(oldReview);
 
-        return returnReview;
+        return this.repo.save(oldReview);
     }
 
     public boolean deleteById(Long id) {
+        this.repo.findById(id).orElseThrow(ReviewNotFoundException::new);
         this.repo.deleteById(id);
-        return  !this.repo.existsById(id);
+
+        return !this.repo.existsById(id);
     }
 
 

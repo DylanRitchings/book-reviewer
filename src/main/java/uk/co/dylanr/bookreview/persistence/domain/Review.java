@@ -1,14 +1,13 @@
 package uk.co.dylanr.bookreview.persistence.domain;
 
-import com.sun.istack.NotNull;
-import com.sun.xml.bind.v2.TODO;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
 import javax.persistence.*;
-import java.awt.print.Book;
+
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -31,10 +30,17 @@ public class Review {
     @NonNull
     private String authorName;
 
+//    @Override
+//    public boolean equals(Object o){
+//        if (o == null){
+//            return false;
+//        }
+//        if(o.getClass() != this.getClass()){
+//            return false;
+//        }
+//        Review review = (Review) o;
+//        return this.body.equals(review.body) || this.bookTitle.equals(review.bookTitle) || this.authorName.equals(review.authorName);
+//
+//    }
 
-    public Review(String body, String bookTitle, String authorName){
-        this.body = body;
-        this.bookTitle = bookTitle;
-        this.authorName = authorName;
-    }
 }

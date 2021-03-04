@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "spring.datasrouce.driver-class-name",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasrouce.driver-class-name."
+  }
+] }

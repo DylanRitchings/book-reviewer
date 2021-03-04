@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/review")
+@CrossOrigin
 public class ReviewController {
 
     private final ReviewService service;
@@ -41,11 +42,11 @@ public class ReviewController {
 
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<Review> deleteById(@PathVariable Long id){
+    public ResponseEntity<Void> deleteById(@PathVariable Long id){
         if (this.service.deleteById(id)){
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-        } else {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
 

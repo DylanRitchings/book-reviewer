@@ -5,8 +5,11 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.jdbc.Sql;
 import uk.co.dylanr.bookreview.persistence.domain.Review;
 import uk.co.dylanr.bookreview.persistence.repo.ReviewRepo;
 
@@ -63,8 +66,11 @@ public class ReviewServiceUnitTest {
 
     @Test
     void testDeleteById(){
+        Mockito.when(this.repo.findById(review.getId())).thenReturn(Optional.of(review));
         Mockito.when(this.repo.existsById(review.getId())).thenReturn(false);
         Assertions.assertThat(this.service.deleteById(review.getId())).isEqualTo(true);
+        Mockito.verify(this.repo, Mockito.times(1)).findById(review.getId());
+        Mockito.verify(this.repo, Mockito.times(1)).deleteById(review.getId());
         Mockito.verify(this.repo, Mockito.times(1)).existsById(review.getId());
     }
 

@@ -4,13 +4,18 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.jdbc.Sql;
 import uk.co.dylanr.bookreview.persistence.domain.Review;
 import uk.co.dylanr.bookreview.rest.controller.ReviewController;
 import uk.co.dylanr.bookreview.service.ReviewService;
+import org.springframework.test.context.jdbc.Sql;
+import org.springframework.test.context.jdbc.Sql.ExecutionPhase;
 
 import java.util.List;
 
@@ -24,12 +29,10 @@ public class ReviewControllerUnitTest {
     private ReviewService service;
 
 
-    private final Review reviewUnchanged = new Review(1L,"review text", "book title","Name Namington");
     private final Review review = new Review(1L,"review text", "book title","Name Namington");
     private final Review reviewChanged = new Review(1L,"This is new text", "new title","Different author");
     private final Review review2 = new Review(2L,"great book", "This is a book","Name Namington");
     private final List<Review> reviews = List.of(review, review2);
-
     private final List<Review> reviewL = List.of(review);
 
     @Test
@@ -56,11 +59,11 @@ public class ReviewControllerUnitTest {
     @Test
     void testDeleteById(){
         Mockito.when(this.service.deleteById(review.getId())).thenReturn(false);
-        Assertions.assertThat(this.controller.deleteById(review.getId())).isEqualTo(new ResponseEntity<>(HttpStatus.NO_CONTENT));
+        Assertions.assertThat(this.controller.deleteById(review.getId())).isEqualTo(new ResponseEntity<>(HttpStatus.NOT_FOUND));
         Mockito.verify(this.service, Mockito.times(1)).deleteById(review.getId());
 
         Mockito.when(this.service.deleteById(review.getId())).thenReturn(true);
-        Assertions.assertThat(this.controller.deleteById(review.getId())).isEqualTo(new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR));
+        Assertions.assertThat(this.controller.deleteById(review.getId())).isEqualTo(new ResponseEntity<>(HttpStatus.NO_CONTENT));
         Mockito.verify(this.service, Mockito.times(2)).deleteById(review.getId());
     }
 
