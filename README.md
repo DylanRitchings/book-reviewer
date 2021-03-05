@@ -27,8 +27,10 @@ Project created using:
 In Jira MOSCOW prioritization was used. Only the must have stories were implemented.
 ![Jira board](https://i.ibb.co/N3MTTSm/Jira-Board.png)
 
+## Javascript function diagram
 
 ## Proposed ERD
+[Incremental ERD changes](link)
 Only one table has been implemented so far. This is a planned SQL structure.
 ![Database ERD](https://i.ibb.co/tKc4JCf/FinalERD.png)
 
@@ -43,7 +45,7 @@ A response to the risk is then formulated. The response will either remove the r
 
 ## Testing Analysis
 
-##
+
 
 [Risk assessment table](https://docs.google.com/spreadsheets/d/1gf561jse1gIF4EhFd0s3GI9c2I2v-i698AgeN7aMWQ4/edit?usp=sharing)
 ## Links
