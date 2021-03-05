@@ -25,7 +25,7 @@ Project created using:
 
 ## Project Tracking
 In Jira MOSCOW prioritization was used. Only the must have stories were implemented.
-![Jira board](https://drive.google.com/file/d/1VRuefNvZbkVK2El4MBWrgV6YVwfThPf5/view?usp=sharing)
+![Jira board](https://i.ibb.co/N3MTTSm/Jira-Board.png)
 
 
 ## Proposed ERD
