@@ -8,24 +8,29 @@
 * ...
 
 ## Overview
-The goal of this project was to create a simple CRUD (create, read, update, delete) web app. I have created a  website where users cab upload books and post reviews about them. The users can also edit or delete their reviews.
+The goal of this project was to create a simple CRUD (create, read, update, delete) web app. I have created a  website where users can upload, edit and delete reviews about books.
+
 
 ## Technologies
 Project created using:
 * Kanban Board: Jira
 * Database: GCP Managed SQL Server
-* Programming language: Java, Spring
+* Programming language: Java
 * Front-end: HTML, CSS and JavaScript
 * Unit Tests: JUnit and Mockito
-* Integration Tests: Selenium?
 * Version Control: Git
-* Cloud server: GCP virtual machine
+
+## Front-End 
+[Front-end repo](https://github.com/DylanRitchings/book-reviewer-frontend)
 
 ## Project Tracking
-Jira uses MOSCOW priority
+In Jira MOSCOW prioritization was used. Only the must have stories were implemented.
+![Jira board](https://drive.google.com/file/d/1VRuefNvZbkVK2El4MBWrgV6YVwfThPf5/view?usp=sharing)
 
-## Entity Relationship Diagram
 
+## Proposed ERD
+Only one table has been implemented so far. This is a planned SQL structure.
+![Database ERD](https://drive.google.com/file/d/18W1Lhsh4qbd-vFb7GlX_Nzvi1HeWhtMM/view?usp=sharing)
 
 
 ## Config
@@ -41,7 +46,7 @@ A response to the risk is then formulated. The response will either remove the r
 
 [Risk assessment table](https://docs.google.com/spreadsheets/d/1gf561jse1gIF4EhFd0s3GI9c2I2v-i698AgeN7aMWQ4/edit?usp=sharing)
 ## Links
-
+* [Front-end low level design](https://drive.google.com/file/d/1xLXwMK-aSNpBKKriDs_NNFMP2Qqk-3go/view?usp=sharing)
 * Web app
 * Documentation
 * Issue tracker?
@@ -49,7 +54,7 @@ A response to the risk is then formulated. The response will either remove the r
 
 
 ## More section ideas
-* Illustrations
+
 * Scope of functionalities 
 * Examples of use
 * Project status 
