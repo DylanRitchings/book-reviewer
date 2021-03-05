@@ -36,6 +36,7 @@ Only one table has been implemented so far. This is a planned SQL structure.
 
 
 ## Risk Management
+TODO RISK ASSESSMENT MATRIX
 A risk is an event that is uncertain that will cause an effect on an objective.
 * Qualitative risk assessment where risks are split into impact and likelyhood.
 * **Risk Category:** What the risk impacts. For this current project completion rate is the most important category due to to the limited time for completion.
