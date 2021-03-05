@@ -13,7 +13,7 @@ The goal of this project was to create a simple CRUD (create, read, update, dele
 
 ## Technologies
 Project created using:
-* Kanban Board: Jira
+* Scrum Board: Jira
 * Database: GCP Managed SQL Server
 * Programming language: Java
 * Front-end: HTML, CSS and JavaScript
