@@ -33,9 +33,6 @@ Only one table has been implemented so far. This is a planned SQL structure.
 ![Database ERD](https://i.ibb.co/tKc4JCf/FinalERD.png)
 
 
-## Config
-Describe what the config variables do
-
 ## Risk Management
 A risk is an event that is uncertain that will cause an effect on an objective.
 * Qualitative risk assessment where risks are split into impact and likelyhood.
