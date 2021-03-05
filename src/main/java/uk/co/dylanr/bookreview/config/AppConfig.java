@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 @Configuration
-@Profile({"test","prod"})
+//@Profile({"test","prod"})
 public class AppConfig {
     @Bean
     public ModelMapper mapper() {
