@@ -46,7 +46,7 @@ A response to the risk is then formulated. The response will either remove the r
 
 [Risk assessment table](https://docs.google.com/spreadsheets/d/1gf561jse1gIF4EhFd0s3GI9c2I2v-i698AgeN7aMWQ4/edit?usp=sharing)
 ## Links
-* [Front-end low level design](https://drive.google.com/file/d/1xLXwMK-aSNpBKKriDs_NNFMP2Qqk-3go/view?usp=sharing)
+* [Front-end low level design](https://lh6.googleusercontent.com/eqs20ym-NNqVqWo4ZnrQcgFizs8gqdBKY_G7xNidB4vBvcrOEAj21Bmys_OQ9N1Y9GhPJ3jMsW6Goi3PWJgi=w1920-h949-rw)
 * Web app
 * Documentation
 * Issue tracker?
