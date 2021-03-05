@@ -17,7 +17,9 @@ Project created using:
 * Database: GCP Managed SQL Server
 * Programming language: Java
 * Front-end: HTML, CSS and JavaScript
+* API Development Testing: Postman and Swagger
 * Unit Tests: JUnit and Mockito
+* Integration Test:
 * Version Control: Git
 
 ## Front-End 
@@ -28,6 +30,12 @@ In Jira MOSCOW prioritization was used. Only the must have stories were implemen
 ![Jira board](https://i.ibb.co/N3MTTSm/Jira-Board.png)
 
 ## Javascript function diagram
+
+## Flowchart backend to frontend
+
+## Java UML
+
+## Current ERD
 
 ## Proposed ERD
 [Incremental ERD changes](link)
@@ -45,8 +53,11 @@ A risk is an event that is uncertain that will cause an effect on an objective.
 A response to the risk is then formulated. The response will either remove the risk completely, reduce its serverity or explain what was done to attempt to reduce the serverity.
 
 ## Testing Analysis
+Type of tests, tools, why used these test and present data of test
 
+## Describe workflow?
 
+## Integration test specification, records and details of any failures
 
 [Risk assessment table](https://docs.google.com/spreadsheets/d/1gf561jse1gIF4EhFd0s3GI9c2I2v-i698AgeN7aMWQ4/edit?usp=sharing)
 ## Links
