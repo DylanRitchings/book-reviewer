@@ -30,7 +30,7 @@ In Jira MOSCOW prioritization was used. Only the must have stories were implemen
 
 ## Proposed ERD
 Only one table has been implemented so far. This is a planned SQL structure.
-![Database ERD](https://drive.google.com/file/d/18W1Lhsh4qbd-vFb7GlX_Nzvi1HeWhtMM/view?usp=sharing)
+![Database ERD](https://drive.google.com/file/d/18W1Lhsh4qbd-vFb7GlX_Nzvi1HeWhtMM/view)
 
 
 ## Config
