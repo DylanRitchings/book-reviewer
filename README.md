@@ -30,6 +30,9 @@ In Jira MOSCOW prioritization was used. Only the must have stories were implemen
 ![Jira board](https://i.ibb.co/N3MTTSm/Jira-Board.png)
 
 ## Javascript function diagram
+This diagrams shows the different types of functions and how they call eachother in the JS frontend. 
+![JS frontend diagram](https://i.ibb.co/cQr3Fjc/js-diagram.png)
+
 
 ## Flowchart backend to frontend
 
