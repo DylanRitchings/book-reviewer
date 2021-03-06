@@ -39,10 +39,11 @@ This diagrams shows the different types of functions and how they call eachother
 ## Java UML
 
 ## Current ERD
+![Current ERD](https://i.ibb.co/4ScBzsN/ERD1.png)
+
 
 ## Proposed ERD
-[Incremental ERD changes](link)
-Only one table has been implemented so far. This is a planned SQL structure.
+This is a planned SQL structure.
 ![Database ERD](https://i.ibb.co/tKc4JCf/FinalERD.png)
 
 
@@ -54,6 +55,7 @@ A risk is an event that is uncertain that will cause an effect on an objective.
 * **Likelyhood:** How likely the event is to occure.
 * **Impact:** How much the category is impacted if the event occurs.
 A response to the risk is then formulated. The response will either remove the risk completely, reduce its serverity or explain what was done to attempt to reduce the serverity.
+
 
 ## Testing Analysis
 Type of tests, tools, why used these test and present data of test
