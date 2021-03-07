@@ -22,10 +22,10 @@ Project created using:
 * Integration Test: Spring MVC
 * Version Control: Git
 
-## Front-End 
-[Front-end repo](https://github.com/DylanRitchings/book-reviewer-frontend)
+## Frontend repository
+[Frontend repo](https://github.com/DylanRitchings/book-reviewer-frontend)
 
-## Project Tracking
+## Project tracking
 In Jira MOSCOW prioritization was used. Only the must have stories were implemented.
 ![Jira board](https://i.ibb.co/N3MTTSm/Jira-Board.png)
 
@@ -34,8 +34,8 @@ This diagrams shows the different types of functions and how they call eachother
 ![JS frontend diagram](https://i.ibb.co/cQr3Fjc/js-diagram.png)
 
 
-## Flowchart backend to frontend
-
+## Frontend to backend data flow
+![Frontend to backend data flow](https://i.ibb.co/wrn7s44/flow-chart.png)
 ## Java UML
 
 ## Current ERD
