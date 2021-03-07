@@ -3,7 +3,7 @@
 * [Overview](#overview)
 * [Technologies](#technologies)
 * [Frontend Repository](#frontend-repository)
-* [Risk Assessment](#risk-assessment)
+* [Risk Management](#risk-management)
 * [Project Tracking](#project-tracking)
 * [Frontend Design](#frontend-design)
 * [Javascript Function Diagram](#javascript-function-diagram)
