@@ -44,7 +44,7 @@ A response to the risk is then formulated. The response will either remove the r
 [Risk assessment table](https://docs.google.com/spreadsheets/d/1gf561jse1gIF4EhFd0s3GI9c2I2v-i698AgeN7aMWQ4/edit?usp=sharing)
 
 ## Project Tracking
-In Jira MOSCOW prioritization was used. Only the must have stories were implemented.
+Jira was used to manage the project sprints. MOSCOW prioritization was used to assess what functionality needs to be implemented first. Only the must have user stories were implemented.
 ![Jira board](https://i.ibb.co/N3MTTSm/Jira-Board.png)
 
 
