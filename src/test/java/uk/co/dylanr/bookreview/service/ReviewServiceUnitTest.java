@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 @SpringBootTest
+@ActiveProfiles(profiles = "test")
 public class ReviewServiceUnitTest {
     @Autowired
     private ReviewService service;

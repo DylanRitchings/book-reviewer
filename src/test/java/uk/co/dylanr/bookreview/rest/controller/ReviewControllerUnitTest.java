@@ -20,6 +20,7 @@ import org.springframework.test.context.jdbc.Sql.ExecutionPhase;
 import java.util.List;
 
 @SpringBootTest
+@ActiveProfiles(profiles = "test")
 public class ReviewControllerUnitTest {
 
     @Autowired

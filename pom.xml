@@ -6,11 +6,11 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.4.3</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>uk.co.dylanr</groupId>
     <artifactId>book-review</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.01-SNAPSHOT</version>
     <name>book-review</name>
     <description>Demo project for Spring Boot</description>
     <properties>
