@@ -47,6 +47,9 @@ A response to the risk is then formulated. The response will either remove the r
 Jira was used to manage the project sprints. MOSCOW prioritization was used to assess what functionality needs to be implemented first. Only the must have user stories were implemented.
 ![Jira board](https://i.ibb.co/N3MTTSm/Jira-Board.png)
 
+A definition of done (DOD) was created for each user story. Here is an example of a DOD for the user story "AS A dev there MUST be a db and backend SO THAT book review information can be retrieved and sent to the frontend":
+![DOD example](https://i.ibb.co/f9VZjQC/Screenshot-from-2021-03-07-17-43-50.png)
+
 
 ## Frontend Design
 A [low level design](https://drive.google.com/file/d/1xLXwMK-aSNpBKKriDs_NNFMP2Qqk-3go/view?usp=sharing) was drawn on paper. The final design was created using HTML and CSS. This is the final frontend webpage:
