@@ -25,6 +25,10 @@ Project created using:
 ## Frontend repository
 [Frontend repo](https://github.com/DylanRitchings/book-reviewer-frontend)
 
+## Frontend design
+A [low level design](https://drive.google.com/file/d/1xLXwMK-aSNpBKKriDs_NNFMP2Qqk-3go/view?usp=sharing) was drawn on paper. The final design was created using HTML and CSS. This is the final frontend webpage:
+![Frontend webpage](https://i.ibb.co/Jcp9PzP/Screenshot-from-2021-03-07-13-47-49.png)
+
 ## Project tracking
 In Jira MOSCOW prioritization was used. Only the must have stories were implemented.
 ![Jira board](https://i.ibb.co/N3MTTSm/Jira-Board.png)
@@ -58,8 +62,7 @@ A response to the risk is then formulated. The response will either remove the r
 [Risk assessment table](https://docs.google.com/spreadsheets/d/1gf561jse1gIF4EhFd0s3GI9c2I2v-i698AgeN7aMWQ4/edit?usp=sharing)
 
 ## Testing
-Two types of tests were used for this project. Junit and Mockito were used for unit tests which test each individual function on its own to assert it produces the correct output. Mockito allows the parts of the application that are not being tested to be mocked. Junit handles the assertions which check whether the correct output has been output. For this application services and controllers were unit tested.
-This is the coverage with the two unit tests:
+Two types of tests were used for this project. Junit and Mockito were used for unit tests which test each individual function on its own to assert it produces the correct output. Mockito allows the parts of the application that are not being tested to be mocked. Junit handles the assertions which check whether the correct output has been output in relation to the inputs and outputs of the mock classes. Both the services and controllers were unit tested.
 
 Integration testing is used to test parts of the application together. Spring Mock MVC was used to mock JSON calls to application. H2 database was used to mock the database so that testing data was not saved to the production database. The controller was used as the test input. The other parts of the application were tested through the controller.
 This is the coverage report for all the tests:
