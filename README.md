@@ -58,8 +58,18 @@ A response to the risk is then formulated. The response will either remove the r
 
 [Risk assessment table](https://docs.google.com/spreadsheets/d/1gf561jse1gIF4EhFd0s3GI9c2I2v-i698AgeN7aMWQ4/edit?usp=sharing)
 
-## Testing Analysis
-Type of tests, tools, why used these test and present data of test
+## Testing
+Two types of tests were used for this project. Junit and Mockito were used for unit tests which test each individual function on its own to assert it produces the correct output. Mockito allows the parts of the application that are not being tested to be mocked. Junit handles the assertions which check whether the correct output has been output. For this application services and controllers were unit tested.
+This is the coverage with the two unit tests:
+![Unit test coverage](https://i.ibb.co/mRcVch2/Screenshot-from-2021-03-07-12-57-22.png)
+
+Integration testing
+
+This is the coverage with one integration test:
+![Integration test coverage](https://i.ibb.co/R0XNYxq/Screenshot-from-2021-03-07-13-07-18.png)
+
+This is the coverage for all the tests:
+![All tests coverage]()
 
 ## Describe workflow?
 
