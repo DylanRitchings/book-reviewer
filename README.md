@@ -78,7 +78,7 @@ This is a planned DB structure to allow for further functionality:
 
 
 ## Testing
-Two types of tests were used for this project. Junit and Mockito were used for unit tests which test each individual function on its own to assert it produces the correct output. Mockito allows the parts of the application that are not being tested to be mocked. Junit handles the assertions which check whether the correct output has been output in relation to the inputs and outputs of the mock classes. Both the services and controllers were unit tested.
+Two types of tests were used for this project. Junit and Mockito were used for unit tests which test each individual function on its own to assert if it produces the correct output. Mockito allows the parts of the application that are not being tested to be mocked. Junit handles the assertions which check whether the correct output has been output in relation to the inputs and outputs of the mock classes. Both the services and controllers were unit tested.
 
 Integration testing is used to test parts of the application together. Spring Mock MVC was used to mock JSON calls to application. H2 database was used to mock the database so that testing data was not saved to the production database. The controller was used as the test input. The other parts of the application were tested through the controller.
 The unit and integration testing had the same coverage. This is the coverage report for all the tests:
