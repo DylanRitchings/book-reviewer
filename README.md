@@ -72,7 +72,7 @@ This is the current DB structure:
 
 ![Current ERD](https://i.ibb.co/4ScBzsN/ERD1.png)
 
-This is a planned DB structure:
+This is a planned DB structure to allow for further functionality:
 
 ![Database ERD](https://i.ibb.co/tKc4JCf/FinalERD.png)
 
