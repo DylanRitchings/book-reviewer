@@ -8,8 +8,7 @@
 * [Frontend Design](#frontend-design)
 * [Javascript Function Diagram](#javascript-function-diagram)
 * [Frontend to Backend Data Flow Diagram](#frontend-to-backend-data-flow-diagram)
-* [Current ERD](#current-erd)
-* [Proposed ERD](#proposed-erd)
+* [ERD](#erd)
 * [Testing](#testing)
 * [Future Improvements](#future-improvements)
 * [Links](#links)
@@ -68,12 +67,11 @@ This diagram shows how data and requests are sent from the front-end to the back
 
 ![Frontend to backend data flow](https://i.ibb.co/wrn7s44/flow-chart.png)
 
-## Current ERD
+## ERD
+This is the current database structure:
 ![Current ERD](https://i.ibb.co/4ScBzsN/ERD1.png)
 
-
-## Proposed ERD
-This is a planned SQL structure.
+This is a planned SQL structure:
 ![Database ERD](https://i.ibb.co/tKc4JCf/FinalERD.png)
 
 
