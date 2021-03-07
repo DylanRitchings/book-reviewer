@@ -69,9 +69,11 @@ This diagram shows how data and requests are sent from the front-end to the back
 
 ## ERD
 This is the current database structure:
+
 ![Current ERD](https://i.ibb.co/4ScBzsN/ERD1.png)
 
 This is a planned SQL structure:
+
 ![Database ERD](https://i.ibb.co/tKc4JCf/FinalERD.png)
 
 
