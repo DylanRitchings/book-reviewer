@@ -27,7 +27,7 @@ Project created using:
 
 ## Frontend design
 A [low level design](https://drive.google.com/file/d/1xLXwMK-aSNpBKKriDs_NNFMP2Qqk-3go/view?usp=sharing) was drawn on paper. The final design was created using HTML and CSS. This is the final frontend webpage:
-![Frontend webpage](https://i.ibb.co/Jcp9PzP/Screenshot-from-2021-03-07-13-47-49.png)
+![Frontend webpage](https://i.ibb.co/wcMLdNQ/Screenshot-from-2021-03-07-16-54-30.png)
 
 ## Project tracking
 In Jira MOSCOW prioritization was used. Only the must have stories were implemented.
