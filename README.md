@@ -7,11 +7,11 @@
 * [Project Tracking](#project-tracking)
 * [Frontend Design](#frontend-design)
 * [Javascript Function Diagram](#javascript-function-diagram)
-* [Frontend to Backend Data Flow Diagram](#frontend_to_backend_data_flow_diagram)
-* [Current ERD](#current_erd)
-* [Proposed ERD](#proposed_erd)
+* [Frontend to Backend Data Flow Diagram](#frontend-to-backend-data-flow-diagram)
+* [Current ERD](#current-erd)
+* [Proposed ERD](#proposed-erd)
 * [Testing](#testing)
-* [Future Improvements](#future_improvements)
+* [Future Improvements](#future-improvements)
 * [Links](#links)
 
 ## Overview
