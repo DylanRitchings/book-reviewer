@@ -53,12 +53,14 @@ A [low level design](https://drive.google.com/file/d/1xLXwMK-aSNpBKKriDs_NNFMP2Q
 ![Frontend webpage](https://i.ibb.co/wcMLdNQ/Screenshot-from-2021-03-07-16-54-30.png)
 
 ## Javascript Function Diagram
-This diagrams shows the different types of functions and how they call eachother in the JS frontend. 
+This diagrams shows the different types of functions and how they call eachother in the JS frontend:
+
 ![JS frontend diagram](https://i.ibb.co/cQr3Fjc/js-diagram.png)
 
 
 ## Frontend to Backend Data Flow Diagram
 This diagram shows how data and requests are sent from the front-end to the backend:
+
 ![Frontend to backend data flow](https://i.ibb.co/wrn7s44/flow-chart.png)
 
 ## Current ERD
